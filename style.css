@@ -46,3 +46,53 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+
+
+/*@font-face {
+	font-family: 'Avenir';
+	src: url('assets/fonts/Avenir.ttc') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}*/
+
+@font-face{
+	font-family : "Avenir";
+
+	src : url('assets/fonts/Avenir-Book.ttf') format('truetype');
+
+	font-weight:normal;
+	font-style:normal;
+	font-variant:normal;
+}
+
+@font-face{
+	font-family : "Avenir";
+
+	src : url('assets/fonts/Avenir-Medium.ttf') format('truetype');
+
+	font-weight:bold;
+}
+
+main {
+	width:100%;
+}
+
+main {
+	container
+}
+
+main #title {
+	font-family:Avenir;
+	font-weight:bold;
+	font-size:20px;
+	margin-top:60px;
+	line-height:26px;
+}
+
+main #subtitle {
+	font-family:Avenir;
+	font-weight:normal;
+	font-size:18px;
+	line-height:26px;
+}
