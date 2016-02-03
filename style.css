@@ -85,6 +85,14 @@ header nav ul li{
 	text-align: center;
 }
 
+header nav ul li a{
+	color:#000;
+}
+
+header nav ul li a:active{
+	border-bottom:2px solid #f8b195;
+}
+
 header nav ul button.btn-donate{
 	width:156px;
 	height:40px;
