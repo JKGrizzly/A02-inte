@@ -47,36 +47,51 @@ table {
 	border-spacing: 0;
 }
 
+/********** GENERAL **********/
 
-@font-face {
-  font-family: 'Avenir';
-  src: url('assets/fonts/Avenir.ttc') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+@font-face{
+   font-family : "Avenir";
+   src : url('assets/fonts/Avenir-Book.ttf') format('truetype');
+   font-weight:normal;
+   font-style:normal;
+   font-variant:normal;
+}
+
+@font-face{
+   font-family : "Avenir";
+   src : url('assets/fonts/Avenir-Medium.ttf') format('truetype');
+   font-weight:bold;
+}
+
+body{
+	overflow-x: hidden; 
 }
 
 a{
 	text-decoration: none;
 }
-/********** HEADER **********/
 
-header{
+
+/********** HEADER DESKTOP**********/
+
+header#header-desktop{
 	width:100%;
 	height:120px;
 	font-family: 'Avenir';
+	display:block;
 }
 
-header div#logo{
+header#header-desktop div.logo{
 	float:left;
 	margin:46px 0 0 100px;
 }
 
-header nav{
+header#header-desktop nav{
 	float:right;
 	margin: 0 100px 0 0;
 }
 
-header nav ul li{
+header#header-desktop nav ul li{
 	display: inline-block;
 	height:40px;
 	font-size: 16px;
@@ -85,15 +100,15 @@ header nav ul li{
 	text-align: center;
 }
 
-header nav ul li a{
+header#header-desktop nav ul li a{
 	color:#000;
 }
 
-header nav ul li a:active{
+header#header-desktop nav ul li a:active{
 	border-bottom:2px solid #f8b195;
 }
 
-header nav ul button.btn-donate{
+header#header-desktop nav ul button.btn-donate{
 	width:156px;
 	height:40px;
 	background: #f8b195;
@@ -104,11 +119,130 @@ header nav ul button.btn-donate{
 
 }
 
-header nav ul button a{
+header#header-desktop nav ul button a{
 	color:#FFF;
 	margin-top:5px;
 	font-size:16px;
 }
+
+/********** HEADER MOBILE**********/
+
+
+header#header-mobile{
+	position: fixed;
+	width: 100%;
+	height:100px;
+	z-index: 10;
+	display:none;
+}
+
+header#header-mobile div#hamburger{
+	float: left;
+	border: 1px solid #374C77;
+    border-radius: 3px 3px 3px 3px;
+    cursor: pointer;
+    display: block;
+    height: 24px;
+    padding: 3px 4px 3px;
+    position: relative;
+    width: 25px;
+    background: #4569b2;
+    background: -moz-linear-gradient(top,  #4569b2 0%, #4062a5 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4569b2), color-stop(100%,#4062a5));
+    background: -webkit-linear-gradient(top,  #4569b2 0%,#4062a5 100%);
+    background: -o-linear-gradient(top,  #4569b2 0%,#4062a5 100%);
+    background: -ms-linear-gradient(top,  #4569b2 0%,#4062a5 100%);
+    background: linear-gradient(to bottom,  #4569b2 0%,#4062a5 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4569b2', endColorstr='#4062a5',GradientType=0 );
+}
+
+
+header#header-mobile #hamburger div {
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 2px 2px 2px 2px;
+    height: 2px;
+    margin-top: 3px;
+    width: 90%;
+}
+
+header#header-mobile div.logo{
+	float: left;
+
+}
+
+nav#mobile-main-menu {
+    left: 0px;
+    top: 0px;
+    position: fixed;
+    z-index: 0;
+    opacity:0;
+    width: 70%;
+    margin:100px 0 0 0;
+    background: yellow;
+    display:none;
+}
+
+nav#mobile-main-menu div#close-mobile-menu{
+	height:20px;
+	width:20px;
+	background: #000;
+	color:#FFF;
+}
+
+nav#mobile-main-menu ul button.btn-donate{
+	margin:20px 0 0 0;
+	width:156px;
+	height:40px;
+	background: #f8b195;
+	color: #FFF;
+	border-radius:100px;
+	outline: none;
+	border: none;
+}
+
+nav#mobile-main-menu ul button.btn-donate a{
+	color: #FFF;
+}
+
+nav#mobile-main-menu ul li{
+	margin:20px 0 0 0;
+	color: #FFF;
+	font-family: 'Avenir';
+	font-size: 16px;
+}
+
+nav#mobile-main-menu ul li a {
+	color: #000;
+}
+
+
+
+
+
+
+
+main{
+	width:auto;
+	height:500px;
+	position:relative;
+	background: red;
+	z-index:1;
+}
+
+
+@media screen and (max-width: 965px) {
+	header#header-desktop{
+	    display:none;
+	}
+	header#header-mobile{
+		display: block;
+	}
+  	nav#mobile-main-menu {
+    	display:block;
+  	}
+}
+
 
 
 
