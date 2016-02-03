@@ -141,9 +141,8 @@ header#header-mobile div#hamburger{
 	border: 1px solid #374C77;
     border-radius: 3px 3px 3px 3px;
     cursor: pointer;
-    display: block;
-    height: 24px;
-    padding: 3px 4px 3px;
+    height: 10px;
+	margin:20px 0 0 20px;
     position: relative;
     width: 25px;
     background: #4569b2;
@@ -168,7 +167,7 @@ header#header-mobile #hamburger div {
 
 header#header-mobile div.logo{
 	float: left;
-
+	margin:0 50% 0 50%;
 }
 
 nav#mobile-main-menu {
