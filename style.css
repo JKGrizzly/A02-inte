@@ -214,7 +214,7 @@ nav#mobile-main-menu ul li a {
 
 main{
 	width:auto;
-	height:500px;
+	height:auto;
 	position:relative;
 	background: red;
 	z-index:1;
@@ -225,7 +225,6 @@ main #title {
 	font-family:Avenir;
 	font-weight:bold;
 	font-size:20px;
-	margin-top:60px;
 	line-height:26px;
 }
 
@@ -238,11 +237,29 @@ main #subtitle {
 
 
 
+/********** ETAPE **********/
+
+main#etape.container{
+
+}
+
+main#etape.container article{
+	width: 70%;
+	height: 700px;
+	background: #000;
+	margin:30px 0 0 100px;
+}
+
+main#etape.container article div.img-etape{
+	width: 100%;
+	height: 444px;
+	background: #0F0 center;
+}
 
 /********** FOOTER **********/
 
 footer{
-	position:absolute;
+	position:relative;
 	bottom:0;
 	width:100%;
 	height: 50px;
@@ -252,7 +269,7 @@ footer{
 
 footer div{
 	width: 100%;
-	position: relative;
+	position: absolute;
 	top: 40%;
 }
 
@@ -278,4 +295,8 @@ footer div h3{
   	main.container{
   		padding:40px 0 0 0;
   	}
+
+  	main #title {
+	margin:50px 0 0 0;
+}
 }
