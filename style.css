@@ -230,6 +230,11 @@ main{
 	z-index:1;
 }
 
+main * {
+	width:1131px;
+	margin:auto;
+}
+
 
 main #title {
 	font-family:Avenir;
@@ -237,6 +242,7 @@ main #title {
 	font-size:20px;
 	margin-top:60px;
 	line-height:26px;
+	text-align:center;
 }
 
 main #subtitle {
@@ -244,6 +250,7 @@ main #subtitle {
 	font-weight:normal;
 	font-size:18px;
 	line-height:26px;
+	text-align:center;
 }
 
 
