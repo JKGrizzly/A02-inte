@@ -47,6 +47,7 @@ table {
 	border-spacing: 0;
 }
 
+
 /********** GENERAL **********/
 
 @font-face{
@@ -230,17 +231,22 @@ main{
 }
 
 
-@media screen and (max-width: 965px) {
-	header#header-desktop{
-	    display:none;
-	}
-	header#header-mobile{
-		display: block;
-	}
-  	nav#mobile-main-menu {
-    	display:block;
-  	}
+main #title {
+	font-family:Avenir;
+	font-weight:bold;
+	font-size:20px;
+	margin-top:60px;
+	line-height:26px;
 }
+
+main #subtitle {
+	font-family:Avenir;
+	font-weight:normal;
+	font-size:18px;
+	line-height:26px;
+}
+
+
 
 
 /********** FOOTER **********/
@@ -268,5 +274,14 @@ footer div h3{
 
 
 
-
-
+@media screen and (max-width: 965px) {
+	header#header-desktop{
+	    display:none;
+	}
+	header#header-mobile{
+		display: block;
+	}
+  	nav#mobile-main-menu {
+    	display:block;
+  	}
+}
