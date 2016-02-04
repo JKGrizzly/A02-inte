@@ -240,30 +240,117 @@ main #subtitle {
 /********** ETAPE **********/
 
 main#etape.container{
-
+	background: #FFF;
+	height: auto;
+	margin:0 100px 0 100px;
 }
 
 main#etape.container article{
-	width: 70%;
-	height: 700px;
-	background: #000;
-	margin:30px 0 0 100px;
+	width: 75%;
+	height: auto;
+	float: left;
+	background: #FFF;
+	margin:30px 0 0 0;
 }
 
 main#etape.container article div.img-etape{
 	width: 100%;
 	height: 444px;
-	background: #0F0 center;
+}
+
+main#etape.container article h1{
+	font-family: 'Avenir';
+	font-weight: bold;
+	font-size: 18px;
+	margin: 30px 0 30px 0;
+}
+
+main#etape.container article p{
+	font-family: 'Avenir';
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 30px;
+}
+
+main#etape.container article nav.etape-contributors{
+	font-family: 'Avenir';
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 30px;
+	color: #f8b195;
+}
+
+main#etape.container article nav.etape-contributors ul li{
+	display: inline-block;
+	margin:20px 40px 0 0;
+}
+
+main#etape.container aside{
+	float: left;
+	width: 25%;
+	height:500px;
+	display: block;
+}
+
+main#etape.container aside h2{
+	font-family: 'Avenir';
+	font-size: 30px;
+	line-height: 26px;
+	letter-spacing: 2.3px;
+	color: #f8b195;
+	margin: 150px 0 0 15%;
+}
+
+main#etape.container aside div{
+	position: absolute;
+	top: 100px;
+}
+
+main#etape.container aside div.trait{
+	right: 14px;
+
+}
+
+main#etape.container aside div.cross{
+	top:145px;
+	right: 0;
+
+}
+
+
+main#etape.container div.etape-next{
+	height: 30px;
+	width: 100%;
+	margin:100px 0 0 0;
+	float: left;
+}
+
+main#etape.container div.etape-next div.btn-etape-next{
+	margin:auto;
+	height:100%;
+	width:50px;
+}
+
+main#etape.container div.etape-next div.btn-etape-next button{
+	width:100%;
+	height:100%;
+	background: url(assets/icons/arrow.svg) no-repeat center;
+	outline: none;
+	border: none;
+}
+
+main#etape.container div.etape-next div.btn-etape-next button:hover{
+	cursor: pointer;
 }
 
 /********** FOOTER **********/
 
 footer{
 	position:relative;
+	display: flex;
 	bottom:0;
 	width:100%;
 	height: 50px;
-	background: green;
 	font-family: 'Avenir';
 }
 
@@ -297,6 +384,23 @@ footer div h3{
   	}
 
   	main #title {
-	margin:50px 0 0 0;
-}
+		margin:50px 0 0 0;
+	}
+
+	main#etape.container {
+	    background: #FFF;
+	    height: auto;
+	    margin: 0 5% 0 5%;
+	}
+
+	main#etape.container article{
+		width: 100%;
+		height: auto;
+		float: left;
+		margin:30px 0;
+	}
+
+	main#etape.container aside{
+		display: none;
+	}
 }
