@@ -229,23 +229,184 @@ main{
 	width:auto;
 	height:auto;
 	position:relative;
-	background: red;
+	/*background: red;*/
 	z-index:1;
 }
 
+main .container {
+	width:1131px;
+	margin:auto;
+	margin-top:15px;
+}
 
-main #title {
+
+main .container #title {
 	font-family:Avenir;
 	font-weight:bold;
 	font-size:20px;
 	line-height:26px;
+	text-align:center;
+	letter-spacing:1.05px;
 }
 
-main #subtitle {
+main .container #subtitle {
 	font-family:Avenir;
 	font-weight:normal;
 	font-size:18px;
 	line-height:26px;
+	text-align:center;
+	letter-spacing:1.04px;
+	margin-top:3px;
+}
+
+main .container .column-left{
+	width:689px;
+	margin:56px 0 0 0;
+	float:left;
+}
+
+main .container .column-left .photo1{
+	margin:0 0 40px 0;
+	width:688px;
+	height:344px;
+}
+
+main .container .column-left .photo2{
+	margin:0 36px 0 0;
+	width:324px;
+	height:286px;
+}
+
+main .container .column-left .photo3{
+	width:324px;
+	height:286px;
+}
+
+main .container .column-right{
+	width:383px;
+	margin:56px 0 0 50px;
+	float:left;
+}
+
+main .container .column-right .photo4{
+	margin:0 0 40px 0;
+}
+
+@media screen and (max-width: 1160px)
+{
+	/*main {
+		background:greenyellow;
+	}*/
+
+	main .container #title {
+		font-family:Avenir;
+		font-weight:bold;
+		font-size:18px;
+		line-height:26px;
+		text-align:center;
+	}
+
+	main .container #subtitle {
+		font-family:Avenir;
+		font-weight:normal;
+		font-size:16px;
+		line-height:26px;
+		text-align:center;
+		letter-spacing:1px;
+		margin-top:3px;
+	}
+
+	main .container {
+		width:730px;
+	}
+
+	main .container .column-left{
+		width:689px;
+		margin:40px auto;
+		float: none;
+	}
+
+	main .container .column-left .photo1{
+		width:100%;
+	}
+
+	main .container .column-right{
+		width:689px;
+		margin:0 auto;
+		float: none;
+	}
+
+	main .container .column-right .photo4 {
+		width:100%;
+		height:310px;
+	}
+
+	main .container .column-right .photo5 {
+		width:100%;
+		height:310px;
+	}
+}
+
+@media screen and (max-width: 760px)
+{
+	/*main {
+		background:blueviolet;
+	}*/
+
+	main .container #title {
+		font-family:Avenir;
+		font-weight:bold;
+		font-size:16px;
+		line-height:26px;
+		text-align:center;
+	}
+
+	main .container #subtitle {
+		font-family:Avenir;
+		font-weight:normal;
+		font-size:14px;
+		line-height:26px;
+		text-align:center;
+		letter-spacing:1px;
+		margin-top:3px;
+	}
+
+	main .container {
+		width:330px;
+	}
+
+	main .container .column-left{
+		width:300px;
+		margin:40px auto;
+		float: none;
+	}
+
+	main .container .column-left .photo1{
+		/*width:100%;*/
+		height:240px;
+	}
+
+	main .container .column-left .photo2{
+		width:100%;
+		height:240px;
+		margin-bottom:40px;
+	}
+
+	main .container .column-left .photo3{
+		width:100%;
+		height:240px;
+	}
+
+	main .container .column-right{
+		width:300px;
+		margin:0 auto;
+		float: none;
+	}
+
+	main .container .column-right * {
+		/*width:100%;*/
+		height:240px;
+	}
 }
 
 
