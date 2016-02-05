@@ -72,6 +72,13 @@ a{
 	text-decoration: none;
 }
 
+button.btn-donate{
+	border-radius:100px;
+	outline: none;
+	border: none;
+
+}
+
 div.line{
 	margin: 8px 0;
 	height: 2px;
@@ -383,7 +390,7 @@ main#mentions.container p{
 }
 
 
-/********** FASSOCIATION **********/
+/********** ASSOCIATION **********/
 
 main#association.container{
 	height: auto;
@@ -419,6 +426,62 @@ main#association.container p{
 	line-height: 30px;
 	margin: 20px 0 30px 0;
 }
+
+/********** DONS **********/
+
+main#dons.container{
+	height: auto;
+	margin:0 100px 0 100px;
+	background: #FFF;
+}
+
+main#dons.container div#choice{
+	width: 100%;
+	margin: 65px 0 0 0;
+}
+
+main#dons.container div#choice div#bloc-choice{
+	margin: auto;
+	width: 50%;
+}
+
+main#dons.container div#choice div#bloc-choice h4{
+	font-family: 'Avenir';
+	font-weight: normal;
+	font-size: 16px;
+	display: block;
+	text-align: center;
+	margin: 0 20px 20px 20px;
+}
+
+main#dons.container div#choice div#bloc-choice h4:nth-child(2){
+	font-family: 'Avenir';
+	font-weight: bold;
+}
+
+main#dons.container div#choice div#bloc-choice button.btn-donate{
+	font-family: 'Avenir';
+	font-weight: normal;
+	font-size: 16px;
+	background: #FFF;
+	border: 1px solid #f8b195;
+	width: 219px;
+	height: 40px;
+	display: block;
+	margin: auto;
+}
+
+main#dons.container div#choice div#bloc-choice button.btn-donate:hover{
+	cursor: pointer;
+	background: #f8b195;
+}
+
+main#dons.container div#choice div#bloc-choice button.btn-donate a{
+	color:#000;
+}
+
+
+
 
 /********** FOOTER **********/
 
