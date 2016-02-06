@@ -65,11 +65,13 @@ $(document).ready(function(){
 			var page = $(this).attr('href'); // section cible
 			var speed = 750; // DurÃ©e de l'animation (en ms)
 
-			console.log(page);
-			console.log(top_offset);
-
-			$('html, body').animate( { scrollTop: $(page).offset().top - top_offset }, speed ); // Go
+			if($(page).length){
+				$('html, body').animate( { scrollTop: $(page).offset().top - top_offset }, speed ); // Go
 				return false;
+			}
+			else{
+				return false;
+			}
 		});
 	}
 
