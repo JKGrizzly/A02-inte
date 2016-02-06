@@ -755,10 +755,6 @@ main#dons.container div#choice div#bloc-choice button.btn-donate:hover{
 	color:#FFF;
 }
 
-main#dons.container form {
-
-}
-
 main#dons.container form input{
 	border: none;
 	margin:0 0 70px 0;
@@ -865,6 +861,136 @@ main#dons.container form input[type="submit"]:hover{
 
 
 
+/********** DONATEURS **********/
+
+main#donateurs.container {
+	clear: both;
+	height: auto;
+	margin:0 100px 0 100px;
+	background: #FFF;
+	max-width: 1131px;
+}
+
+main .container{
+	width: initial;
+}
+
+main#donateurs.container div#title {
+	font-family:Avenir;
+	font-weight:bold;
+	font-size:20px;
+	line-height:26px;
+	text-align:center;
+	letter-spacing:1.05px;
+}
+
+main#donateurs.container div#subtitle {
+	font-family:Avenir;
+	font-weight:normal;
+	font-size:18px;
+	line-height:26px;
+	text-align:center;
+	letter-spacing:1.04px;
+	margin-top:3px;
+}
+
+main#donateurs.container div#choice-area{
+	width: 90%;
+	margin: 65px auto 60px auto;
+}
+
+main#donateurs.container div#choice-area h2{
+	color: #f8b195;
+	font-family: 'Avenir';
+	font-size: 18px;
+	font-weight: normal;
+	text-align: center;
+}
+
+main#donateurs.container div#choice-area form{
+	
+}
+
+main#donateurs.container div#choice-area form div{
+	border: 1px solid #f8b195;
+	border-radius: 100px;
+	width: 137px;
+	height: 40px;
+}
+
+main#donateurs.container div#choice-area form div select{
+	border: none;
+	color: #f8b195;
+	font-size: 16px;
+	font-weight: normal;
+	outline: none;
+	background: #FFF;
+	margin: 10px 0 0 20px;
+}
+
+main#donateurs.container div#choice-area div#progress{
+	width: 320px;
+	margin: auto;
+}
+
+main#donateurs.container div#choice-area div#bar-total{
+	display: inline-block;
+	width: 250px;
+	height: 10px;
+	border: 1px solid #f8b195;
+	border-radius: 100px;
+	margin:0 20px 0 auto;
+}
+
+main#donateurs.container div#choice-area div#bar-progress{
+	width: 50%;
+	height: 10px;
+	background:#f8b195;
+	border-radius: 100px;
+	margin: 0;
+}
+
+main#donateurs.container div#choice-area h3{
+	color: #f8b195;
+	font-family: 'Avenir';
+	font-size: 18px;
+	font-weight: normal;
+	display: inline-block;
+}
+
+main#donateurs.container table{
+	width: 85%;
+	margin: 65px auto 60px auto;
+}
+
+main#donateurs.container table thead, main#donateurs.container table tr{
+	border-bottom: 1px solid #f8b195;
+	height: 60px;
+}
+
+
+main#donateurs.container table thead th, main#donateurs.container table tr td{
+	padding-top: 35px;
+	font-family: 'Avenir';
+	font-weight: bold;
+	font-size: 18px;
+	width: 30%;
+}
+
+main#donateurs.container table thead th:first-child, main#donateurs.container table tr td:first-child{
+	text-align: left;
+}
+
+main#donateurs.container table thead th:nth-child(2), main#donateurs.container table tr td:nth-child(2){
+	text-align: center;
+}
+
+main#donateurs.container table thead th:nth-child(3), main#donateurs.container table tr td:nth-child(3){
+	text-align: right;
+	color: #f8b195;
+}
+
+
 /********** FOOTER **********/
 
 footer{
@@ -894,6 +1020,10 @@ footer div h3 a{
 	main#association.container article{
 
 		margin:50px 0 0 2%;
+	}
+
+	main#donateurs .container {
+		margin: auto;
 	}
 }
 
@@ -952,4 +1082,44 @@ footer div h3 a{
 		background: url(assets/images/association-mobile.jpg) no-repeat center;
 		margin:30px 0;
 	}
+
+	main#donateurs.container div#title {
+		font-family:Avenir;
+		font-weight:bold;
+		font-size:20px;
+		line-height:26px;
+		text-align:center;
+		letter-spacing:1.05px;
+		width: 90%;
+		margin: auto;
+	}
+
+	main#donateurs.container div#subtitle {
+		font-family:Avenir;
+		font-weight:normal;
+		font-size:18px;
+		line-height:26px;
+		text-align:center;
+		letter-spacing:1.04px;
+		margin-top:3px;
+		width: 90%;
+		margin: auto;
+	}
+
+	main#donateurs.container div#choice-area form div{
+		margin:30px auto 30px auto;
+	}
+
 }
+
+@media screen and (max-width:600px){
+
+	main#donateurs.container {
+	    margin: 0 2% 0 2%;
+	}
+
+	main#donateurs.container div#choice-area div#bar-total{
+		width: 240px;
+	}
+}
+

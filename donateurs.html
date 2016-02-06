@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>DONATEURS</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="container">
+		<header id="header-desktop">
+			<div class="logo">LOGO</div>
+			<nav id="main-menu">
+				<ul>
+					<li><a href="index.html">Accueil</a></li>
+					<li><a href="association.html">L'association</a></li>
+					<li><a href="#">Les donateurs</a></li>
+					<button class="btn-donate"><a href="#">Faites un don</a></button>
+				</ul>
+			</nav>
+		</header>
+		<header id="header-mobile">
+			<div id="hamburger">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<div class="logo">LOGO</div>
+			
+		</header>
+		<nav id="mobile-main-menu">
+			<div id="close-mobile-menu">X</div>
+			<ul>
+				<li><a href="index.html">Accueil</a></li>
+				<li><a href="association.html">L'association</a></li>
+				<li><a href="#">Les donateurs</a></li>
+				<button class="btn-donate"><a href="#">Faites un don</a></button>
+				</ul>
+		</nav>
+
+		<main id="donateurs" class="container">
+			<div class="container">
+				<div id="title">Après chaque étape, le donateur le plus généreux sera remercier et mis en avant pendant la course. </div>
+				<div id="subtitle">Nous remercions tout les participants pour leur geste et n’oubliez pas, il n’y a pas de petit don !</div>
+				<div id="choice-area">
+					<h2>Objectif du jour</h2>
+					<form action="#">
+						<div>
+							<select name="etape" id="etape">
+					           <option value="etape1">Etape 1</option>
+					           <option value="etape2">Etape 2</option>
+					           <option value="etape3">Etape 3</option>
+					           <option value="etape4">Etape 4</option>
+					           <option value="etape5">Etape 5</option>
+					           <option value="etape6">Etape 6</option>
+					           <option value="etape7">Etape 7</option>
+					           <option value="etape8">Etape 8</option>
+					           <option value="etape9">Etape 9</option>
+					           <option value="etape10">Etape 10</option>
+					       </select>
+						</div>
+					</form>
+					<div id="progress">
+						<div id="bar-total">
+							<div id="bar-progress">
+							</div>
+						</div>
+						<h3>20€</h3>
+					</div>
+				</div>
+				<table>
+					<thead>
+						<th>Nom</th>
+						<th>Etapes</th>
+						<th>Montant</th>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Patrick</td>
+							<td>1/2/3</td>
+							<td>10€</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</main>
+		<footer>
+			<div>
+				<h3><a href="mentionslegales.html">Mentions Légales</a></h3>
+			</div>
+		</footer>
+	</div>
+</body>
+<script src="jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="script.js" type="text/javascript"></script>
+</html>
