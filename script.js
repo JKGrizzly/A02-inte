@@ -41,7 +41,7 @@ $(document).ready(function(){
     	//close the menu
 	    $('#close-mobile-menu').click(function() {
 	        //enable all scrolling on mobile devices when menu is closed
-		    $('div#container').unbind('touchmove');
+		    $('main').unbind('touchmove');
 		 
 		    //set margin for the whole container back to original state with a jquery UI animation
 		    $('div#container').animate({ 
