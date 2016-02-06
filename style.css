@@ -97,7 +97,11 @@ header#header-desktop{
 
 header#header-desktop div.logo{
 	float:left;
-	margin:46px 0 0 100px;
+	margin:22px 0 0 100px;
+}
+
+header#header-desktop div.logo img{
+	width:83px;
 }
 
 header#header-desktop nav{
@@ -360,9 +364,9 @@ main .container .column-right .photo5{
 
 @media screen and (max-width: 1160px)
 {
-	/*main {
-		background:greenyellow;
-	}*/
+	header#header-mobile div#hamburger {
+		top: -51px;
+	}
 
 	.layout-text{
 		opacity:1;
@@ -394,7 +398,7 @@ main .container .column-right .photo5{
 		line-height:26px;
 		text-align:center;
 		letter-spacing:1px;
-		margin-top:3px;
+		margin:3px;
 	}
 
 	main .container {
@@ -436,28 +440,23 @@ main .container .column-right .photo5{
 
 @media screen and (max-width: 760px)
 {
-	/*main {
-		background:blueviolet;
-	}*/
-
-
-
 	main .container #title {
 		font-family:Avenir;
 		font-weight:bold;
 		font-size:16px;
 		line-height:26px;
 		text-align:center;
+		margin:48px 6px 0 6px;
 	}
 
 	main .container #subtitle {
 		font-family:Avenir;
 		font-weight:normal;
 		font-size:14px;
-		line-height:26px;
+		line-height:21px;
 		text-align:center;
 		letter-spacing:1px;
-		margin-top:3px;
+		margin:15px 8px 0 8px;
 	}
 
 	main .container {
