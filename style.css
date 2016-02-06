@@ -66,6 +66,11 @@ table {
 
 body{
 	overflow-x: hidden; 
+	background: #FFF;
+}
+
+#container{
+	background: #FFF;
 }
 
 a{
@@ -93,6 +98,7 @@ header#header-desktop{
 	height:100px;
 	font-family: 'Avenir';
 	display:block;
+	background: #FFF;
 }
 
 header#header-desktop div.logo{
@@ -148,6 +154,7 @@ header#header-mobile{
 	height:60px;
 	z-index: 10;
 	display:none;
+	background: transparent;
 }
 
 header#header-mobile div#hamburger{
@@ -161,10 +168,9 @@ header#header-mobile div#hamburger{
 
 
 header#header-mobile #hamburger div {
-    background-color: #fff;
-    border: 1px solid #eee;
+    background: rgba(248, 176, 149, 0.5);
     border-radius: 2px 2px 2px 2px;
-    height: 2px;
+    height: 4px;
     margin-top: 3px;
     width: 90%;
 }
@@ -180,21 +186,27 @@ nav#mobile-main-menu {
     position: fixed;
     z-index: 0;
     opacity:0;
-    width: 70%;
-    margin:100px 0 0 0;
-    background: yellow;
+    width: 40%;
+    height: 100%;
+    background: rgba(248, 176, 149, 0.5);
     display:none;
 }
 
 nav#mobile-main-menu div#close-mobile-menu{
+	font-family: 'Avenir';
+	font-weight: bold;
 	height:20px;
 	width:20px;
-	background: #000;
 	color:#FFF;
+	margin: 25px 0 0 20px;
+}
+
+nav#mobile-main-menu div#close-mobile-menu:hover{
+	cursor: pointer;
 }
 
 nav#mobile-main-menu ul button.btn-donate{
-	margin:20px 0 0 0;
+	margin:20px 0 40px 35px;
 	width:156px;
 	height:40px;
 	background: #f8b195;
@@ -204,19 +216,30 @@ nav#mobile-main-menu ul button.btn-donate{
 	border: none;
 }
 
+nav#mobile-main-menu img{
+	position: absolute;
+	bottom: 15%;
+	left: 40%;
+}
+
 nav#mobile-main-menu ul button.btn-donate a{
 	color: #FFF;
+	font-size: 14px;
+	font-weight: normal;
 }
 
 nav#mobile-main-menu ul li{
 	margin:20px 0 0 0;
 	color: #FFF;
+	height: 40px;
 	font-family: 'Avenir';
-	font-size: 16px;
+	font-size: 18px;
+	font-weight: normal;
 }
 
 nav#mobile-main-menu ul li a {
-	color: #000;
+	color: #FFF;
+	margin: 30px 0 0 35px;
 }
 
 
@@ -229,14 +252,14 @@ main{
 	width:auto;
 	height:auto;
 	position:relative;
-	/*background: red;*/
+	background: #FFF;
 	z-index:1;
 }
 
 main .container {
 	width:1131px;
 	margin:auto;
-	margin-top:15px;
+	background: #FFF;
 }
 
 
@@ -872,7 +895,7 @@ main#donateurs.container {
 	max-width: 1131px;
 }
 
-main .container{
+main#donateurs.container div.container{
 	width: initial;
 }
 
@@ -906,10 +929,6 @@ main#donateurs.container div#choice-area h2{
 	font-size: 18px;
 	font-weight: normal;
 	text-align: center;
-}
-
-main#donateurs.container div#choice-area form{
-	
 }
 
 main#donateurs.container div#choice-area form div{
@@ -1048,10 +1067,6 @@ footer div h3 a{
   	main.container{
   		padding:40px 0 0 0;
   	}
-
-  	main #title {
-		margin:50px 0 0 0;
-	}
 
 	main#etape.container {
 	    background: #FFF;
