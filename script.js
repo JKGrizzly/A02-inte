@@ -1,37 +1,76 @@
 $(document).ready(function(){
 
+	//openBurger();
+	closeBurger();
+	scrollEtape();
+
+	if (window.matchMedia("(max-width: 650px)").matches) {
+		openBurger('75%');
+	}
+	else{
+		openBurger('40%');
+	}
+
     //Open the menu
-    $('#hamburger').click(function() {
-        console.log('lolo');
+    function openBurger(margin){
+    	$('#hamburger').click(function() {
 
-        $('div#container').bind('touchmove', function(e){e.preventDefault()});
+	        $('main').bind('touchmove', function(e){e.preventDefault()});
 
-        $('nav#mobile-main-menu').css('opacity', 1);
+	        //set the width of primary content container -> content should not scale while animating
+			var contentWidth = $('main').width();
+			 
+			//set the content with the width that it has originally
+			$('main').css('width', contentWidth);
 
-        //set margin for the whole container with a jquery UI animation
-		$("div#container").animate({ 
-			marginLeft: '40%',
-			easing : 'easeOutExpo'
-		}, {
-		    duration: 700
-		});
-    });
- 
-    //close the menu
-    $('#close-mobile-menu').click(function() {
-        //enable all scrolling on mobile devices when menu is closed
-	    $('div#container').unbind('touchmove');
-	 
-	    //set margin for the whole container back to original state with a jquery UI animation
-	    $('div#container').animate({ 
-			marginLeft: '0',
-			easing : 'easeOutExpo'
-		}, {
-		    duration: 700,
-	        complete: function() {
-	        	$('nav#mobile-main-menu').css('opacity', 0);
-	            $('div#container').css('width', 'auto');
-	        }
+
+
+	        $('nav#mobile-main-menu').css('opacity', 1);
+
+	        //set margin for the whole container with a jquery UI animation
+			$("div#container").animate({ 
+				marginLeft: margin,
+				easing : 'easeOutExpo'
+			}, {
+			    duration: 700
+			});
 	    });
-    });
+    }
+
+    function closeBurger(){
+    	//close the menu
+	    $('#close-mobile-menu').click(function() {
+	        //enable all scrolling on mobile devices when menu is closed
+		    $('div#container').unbind('touchmove');
+		 
+		    //set margin for the whole container back to original state with a jquery UI animation
+		    $('div#container').animate({ 
+				marginLeft: '0',
+				easing : 'easeOutExpo'
+			}, {
+			    duration: 700,
+		        complete: function() {
+		        	$('nav#mobile-main-menu').css('opacity', 0);
+		            $('div#container').css('width', '100%');
+		        }
+		    });
+	    });
+    }
+    
+
+	function scrollEtape(event){
+		var top_offset = $('header').height();
+
+		$('.scrollTo').click( function() { // Au clic sur un Ã©lÃ©ment
+			var page = $(this).attr('href'); // section cible
+			var speed = 750; // DurÃ©e de l'animation (en ms)
+
+			console.log(page);
+			console.log(top_offset);
+
+			$('html, body').animate( { scrollTop: $(page).offset().top - top_offset }, speed ); // Go
+				return false;
+		});
+	}
+
 });

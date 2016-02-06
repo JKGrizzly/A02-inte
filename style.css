@@ -99,6 +99,8 @@ header#header-desktop{
 	font-family: 'Avenir';
 	display:block;
 	background: #FFF;
+	position: fixed;
+    z-index: 10000;
 }
 
 header#header-desktop div.logo{
@@ -158,7 +160,7 @@ header#header-mobile{
 	height:60px;
 	z-index: 10;
 	display:none;
-	background: transparent;
+	background: #FFF;
 }
 
 header#header-mobile div#hamburger{
@@ -385,161 +387,23 @@ main .container .column-right .photo5{
 	position:relative;
 }
 
-@media screen and (max-width: 1160px)
-{
-	header#header-mobile div#hamburger {
-		top: -51px;
-	}
-
-	.layout-text{
-		opacity:1;
-	}
-
-	.layout-hover{
-		height:40%;
-		bottom:0px;
-		opacity:0.6;
-		position:absolute;
-	}
-
-	.layout-text h3{
-		font-size:18px;
-	}
-
-	main .container #title {
-		font-family:Avenir;
-		font-weight:bold;
-		font-size:18px;
-		line-height:26px;
-		text-align:center;
-	}
-
-	main .container #subtitle {
-		font-family:Avenir;
-		font-weight:normal;
-		font-size:16px;
-		line-height:26px;
-		text-align:center;
-		letter-spacing:1px;
-		margin:3px;
-	}
-
-	main .container {
-		width:730px;
-	}
-
-	main .container .column-left{
-		width:689px;
-		margin:40px auto;
-		float: none;
-	}
-
-	main .container .column-left .photo1{
-		width:100%;
-	}
-
-	main .container .column-left .photo1 .layout-text{
-		bottom:12%;
-	}
-
-	main .container .column-right{
-		width:689px;
-		margin:0 auto;
-		float: none;
-	}
-
-	main .container .column-right .photo4 {
-		/*width:100%;*/
-		height:310px;
-		margin: 40px auto 0 auto;
-	}
-
-	main .container .column-right .photo5 {
-		/*width:100%;*/
-		/*height:310px;*/
-		margin: 40px auto 0 auto;
-	}
-}
-
-@media screen and (max-width: 760px)
-{
-	main .container #title {
-		font-family:Avenir;
-		font-weight:bold;
-		font-size:16px;
-		line-height:26px;
-		text-align:center;
-		margin:48px 6px 0 6px;
-	}
-
-	main .container #subtitle {
-		font-family:Avenir;
-		font-weight:normal;
-		font-size:14px;
-		line-height:21px;
-		text-align:center;
-		letter-spacing:1px;
-		margin:15px 8px 0 8px;
-	}
-
-	main .container {
-		width:330px;
-	}
-
-	main .container .column-left{
-		width:300px;
-		margin:40px auto;
-		float: none;
-	}
-
-	main .container .column-left .photo1{
-		/*width:100%;*/
-		height:240px;
-	}
-
-	main .container .column-left .photo1 .layout-text{
-		bottom:7%;
-	}
-
-	main .container .column-left .photo2{
-		width:100%;
-		height:240px;
-		margin-bottom:40px;
-	}
-
-	main .container .column-left .photo3{
-		width:100%;
-		height:240px;
-	}
-
-	main .container .column-right{
-		width:300px;
-		margin:0 auto;
-		float: none;
-	}
-
-	main .container .column-right .photo4 {
-		width:100%;
-		height:240px;
-	}
-
-	main .container .column-right .photo5 {
-		width:100%;
-		height:200px;
-	}
-}
-
-
 
 /********** ETAPE **********/
 
-main#etape.container{
+main#etapes.container{
 	background: #FFF;
 	height: auto;
 	margin:0 100px 0 100px;
+	float: left;
 }
 
-main#etape.container article{
+main#etapes.container section{
+	float: left;
+	width: 100%;
+	height: 100%;
+}
+
+main#etapes.container article{
 	width: 75%;
 	height: auto;
 	float: left;
@@ -547,26 +411,26 @@ main#etape.container article{
 	margin:30px 0 0 0;
 }
 
-main#etape.container article div.img-etape{
+main#etapes.container article div.img-etape{
 	width: 100%;
 	height: 444px;
 }
 
-main#etape.container article h1{
+main#etapes.container article h1{
 	font-family: 'Avenir';
 	font-weight: bold;
 	font-size: 18px;
 	margin: 30px 0 30px 0;
 }
 
-main#etape.container article p{
+main#etapes.container article p{
 	font-family: 'Avenir';
 	font-weight: normal;
 	font-size: 16px;
 	line-height: 30px;
 }
 
-main#etape.container article nav.etape-contributors{
+main#etapes.container article nav.etape-contributors{
 	font-family: 'Avenir';
 	font-weight: normal;
 	font-size: 16px;
@@ -574,19 +438,19 @@ main#etape.container article nav.etape-contributors{
 	color: #f8b195;
 }
 
-main#etape.container article nav.etape-contributors ul li{
+main#etapes.container article nav.etape-contributors ul li{
 	display: inline-block;
 	margin:20px 40px 0 0;
 }
 
-main#etape.container aside{
+main#etapes.container aside{
 	float: left;
 	width: 25%;
 	height:500px;
 	display: block;
 }
 
-main#etape.container aside h2{
+main#etapes.container aside h2{
 	font-family: 'Avenir';
 	font-size: 30px;
 	line-height: 26px;
@@ -595,37 +459,37 @@ main#etape.container aside h2{
 	margin: 150px 0 0 15%;
 }
 
-main#etape.container aside div{
+main#etapes.container aside div{
 	position: absolute;
 	top: 100px;
 }
 
-main#etape.container aside div.trait{
+main#etapes.container aside div.trait{
 	right: 14px;
 
 }
 
-main#etape.container aside div.cross{
+main#etapes.container aside div.cross{
 	top:145px;
 	right: 0;
 
 }
 
 
-main#etape.container div.etape-next{
+main#etapes.container div.etape-next{
 	height: 30px;
 	width: 100%;
 	margin:100px 0 0 0;
 	float: left;
 }
 
-main#etape.container div.etape-next div.btn-etape-next{
+main#etapes.container div.etape-next div.btn-etape-next{
 	margin:auto;
 	height:100%;
 	width:50px;
 }
 
-main#etape.container div.etape-next div.btn-etape-next button{
+main#etapes.container div.etape-next div.btn-etape-next button{
 	width:100%;
 	height:100%;
 	background: url(assets/icons/arrow.svg) no-repeat center;
@@ -633,7 +497,7 @@ main#etape.container div.etape-next div.btn-etape-next button{
 	border: none;
 }
 
-main#etape.container div.etape-next div.btn-etape-next button:hover{
+main#etapes.container div.etape-next div.btn-etape-next button:hover{
 	cursor: pointer;
 }
 
@@ -645,6 +509,7 @@ main#mentions.container{
 	height: auto;
 	margin:0 100px 0 100px;
 	background: #FFF;
+	float: left;
 }
 
 main#mentions.container h1, main#mentions.container h2{
@@ -677,6 +542,7 @@ main#association.container{
 	height: auto;
 	margin:0 100px 0 100px;
 	background: #FFF;
+	float: left;
 }
 
 main#association.container aside{
@@ -715,6 +581,7 @@ main#dons.container{
 	height: auto;
 	margin:0 100px 0 100px;
 	background: #FFF;
+	float: left;
 }
 
 main#dons.container #title {
@@ -892,6 +759,7 @@ main#donateurs.container {
 	margin:0 100px 0 100px;
 	background: #FFF;
 	max-width: 1131px;
+	float: left;
 }
 
 main#donateurs.container div.container{
@@ -1067,20 +935,29 @@ footer div h3 a{
   		padding:40px 0 0 0;
   	}
 
-	main#etape.container {
+  	main .container #title {
+		font-family:Avenir;
+		font-weight:bold;
+		font-size:18px;
+		line-height:26px;
+		text-align:center;
+		padding-top: 70px;
+	}
+
+	main#etapes.container {
 	    background: #FFF;
 	    height: auto;
 	    margin: 0 5% 0 5%;
 	}
 
-	main#etape.container article{
+	main#etapes.container article{
 		width: 100%;
 		height: auto;
 		float: left;
 		margin:30px 0;
 	}
 
-	main#etape.container aside{
+	main#etapes.container aside{
 		display: none;
 	}
 
@@ -1138,3 +1015,149 @@ footer div h3 a{
 	}
 }
 
+@media screen and (max-width: 1160px){
+
+	.layout-text{
+		opacity:1;
+	}
+
+	.layout-hover{
+		height:40%;
+		bottom:0px;
+		opacity:0.6;
+		position:absolute;
+	}
+
+	.layout-text h3{
+		font-size:18px;
+	}
+
+	main .container #title {
+		font-family:Avenir;
+		font-weight:bold;
+		font-size:18px;
+		line-height:26px;
+		text-align:center;
+	}
+
+	main .container #subtitle {
+		font-family:Avenir;
+		font-weight:normal;
+		font-size:16px;
+		line-height:26px;
+		text-align:center;
+		letter-spacing:1px;
+		margin:3px;
+	}
+
+	main .container {
+		width:730px;
+	}
+
+	main .container .column-left{
+		width:689px;
+		margin:40px auto;
+		float: none;
+	}
+
+	main .container .column-left .photo1{
+		width:100%;
+	}
+
+	main .container .column-left .photo1 .layout-text{
+		bottom:12%;
+	}
+
+	main .container .column-right{
+		width:689px;
+		margin:0 auto;
+		float: none;
+	}
+
+	main .container .column-right .photo4 {
+		/*width:100%;*/
+		height:310px;
+		margin: 40px auto 0 auto;
+	}
+
+	main .container .column-right .photo5 {
+		/*width:100%;*/
+		/*height:310px;*/
+		margin: 40px auto 0 auto;
+	}
+}
+
+@media screen and (max-width: 760px){
+
+	main .container #title {
+		font-family:Avenir;
+		font-weight:bold;
+		font-size:16px;
+		line-height:26px;
+		text-align:center;
+		margin:0 6px 0 6px;
+	}
+
+	main .container #subtitle {
+		font-family:Avenir;
+		font-weight:normal;
+		font-size:14px;
+		line-height:21px;
+		text-align:center;
+		letter-spacing:1px;
+		margin:15px 8px 0 8px;
+	}
+
+	main .container {
+		width:330px;
+	}
+
+	main .container .column-left{
+		width:300px;
+		margin:40px auto;
+		float: none;
+	}
+
+	main .container .column-left .photo1{
+		/*width:100%;*/
+		height:240px;
+	}
+
+	main .container .column-left .photo1 .layout-text{
+		bottom:7%;
+	}
+
+	main .container .column-left .photo2{
+		width:100%;
+		height:240px;
+		margin-bottom:40px;
+	}
+
+	main .container .column-left .photo3{
+		width:100%;
+		height:240px;
+	}
+
+	main .container .column-right{
+		width:300px;
+		margin:0 auto;
+		float: none;
+	}
+
+	main .container .column-right .photo4 {
+		width:100%;
+		height:240px;
+	}
+
+	main .container .column-right .photo5 {
+		width:100%;
+		height:200px;
+	}
+}
+
+@media  screen and (max-width: 650px){
+
+	nav#mobile-main-menu {
+	    width: 75%;
+	}
+}
