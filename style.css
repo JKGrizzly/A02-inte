@@ -265,21 +265,76 @@ main .container .column-left{
 	float:left;
 }
 
+.layout-text{
+	position:absolute;
+	bottom:7%;
+	left:6%;
+	color:#FFFFFF;
+	font-family: Avenir;
+	transition:opacity 0.5s ease 0s;
+	opacity:0;
+}
+
+.layout-hover:hover+.layout-text{
+	opacity:1;
+}
+
+.layout-text h3{
+	font-size:20px;
+}
+
+.layout-text>span{
+	margin-top:5px;
+	width:20px;
+	height:1px;
+	background-color: #f8b195;
+	display:block;
+}
+
+.layout-text div{
+	font-size:13px;
+	margin-top:10px;
+}
+
+.layout-text div>span{
+	color:#f8b195;
+}
+
+.layout-hover{
+	width:100%;
+	height: 100%;
+	opacity:0;
+	background-color: black;
+	transition:opacity 0.5s ease 0s;
+}
+
+.layout-hover:hover{
+	opacity:0.6;
+}
+
 main .container .column-left .photo1{
 	margin:0 0 40px 0;
 	width:688px;
 	height:344px;
+	background:url('assets/images/photo6.jpg') no-repeat center;
+	position:relative;
 }
 
 main .container .column-left .photo2{
 	margin:0 36px 0 0;
 	width:324px;
 	height:286px;
+	background:url('assets/images/photo2.jpg') no-repeat center;
+	display:inline-block;
+	position:relative;
 }
 
 main .container .column-left .photo3{
 	width:324px;
 	height:286px;
+	background:url('assets/images/photo3.jpg') no-repeat center;
+	display:inline-block;
+	position:relative;
 }
 
 main .container .column-right{
@@ -290,6 +345,17 @@ main .container .column-right{
 
 main .container .column-right .photo4{
 	margin:0 0 40px 0;
+	width:383px;
+	height:421px;
+	background:url('assets/images/photo4.jpg') no-repeat center;
+	position:relative;
+}
+
+main .container .column-right .photo5{
+	width:383px;
+	height:209px;
+	background:url('assets/images/photo5.jpg') no-repeat center;
+	position:relative;
 }
 
 @media screen and (max-width: 1160px)
@@ -297,6 +363,21 @@ main .container .column-right .photo4{
 	/*main {
 		background:greenyellow;
 	}*/
+
+	.layout-text{
+		opacity:1;
+	}
+
+	.layout-hover{
+		height:40%;
+		bottom:0px;
+		opacity:0.6;
+		position:absolute;
+	}
+
+	.layout-text h3{
+		font-size:18px;
+	}
 
 	main .container #title {
 		font-family:Avenir;
@@ -330,6 +411,10 @@ main .container .column-right .photo4{
 		width:100%;
 	}
 
+	main .container .column-left .photo1 .layout-text{
+		bottom:12%;
+	}
+
 	main .container .column-right{
 		width:689px;
 		margin:0 auto;
@@ -337,13 +422,15 @@ main .container .column-right .photo4{
 	}
 
 	main .container .column-right .photo4 {
-		width:100%;
+		/*width:100%;*/
 		height:310px;
+		margin: 40px auto 0 auto;
 	}
 
 	main .container .column-right .photo5 {
-		width:100%;
-		height:310px;
+		/*width:100%;*/
+		/*height:310px;*/
+		margin: 40px auto 0 auto;
 	}
 }
 
@@ -352,6 +439,8 @@ main .container .column-right .photo4{
 	/*main {
 		background:blueviolet;
 	}*/
+
+
 
 	main .container #title {
 		font-family:Avenir;
@@ -386,6 +475,10 @@ main .container .column-right .photo4{
 		height:240px;
 	}
 
+	main .container .column-left .photo1 .layout-text{
+		bottom:7%;
+	}
+
 	main .container .column-left .photo2{
 		width:100%;
 		height:240px;
@@ -403,9 +496,14 @@ main .container .column-right .photo4{
 		float: none;
 	}
 
-	main .container .column-right * {
-		/*width:100%;*/
+	main .container .column-right .photo4 {
+		width:100%;
 		height:240px;
+	}
+
+	main .container .column-right .photo5 {
+		width:100%;
+		height:200px;
 	}
 }
 
