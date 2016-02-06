@@ -682,6 +682,7 @@ main#association.container p{
 	font-family: 'Avenir';
 	font-weight: bold;
 	font-size: 16px;
+	max-width: 600px;
 	line-height: 30px;
 	margin: 20px 0 30px 0;
 }
@@ -692,6 +693,25 @@ main#dons.container{
 	height: auto;
 	margin:0 100px 0 100px;
 	background: #FFF;
+}
+
+main#dons.container #title {
+	font-family:Avenir;
+	font-weight:bold;
+	font-size:20px;
+	line-height:26px;
+	text-align:center;
+	letter-spacing:1.05px;
+}
+
+main#dons.container #subtitle {
+	font-family:Avenir;
+	font-weight:normal;
+	font-size:18px;
+	line-height:26px;
+	text-align:center;
+	letter-spacing:1.04px;
+	margin-top:3px;
 }
 
 main#dons.container div#choice{
@@ -727,18 +747,122 @@ main#dons.container div#choice div#bloc-choice button.btn-donate{
 	width: 219px;
 	height: 40px;
 	display: block;
-	margin: auto;
+	margin: 0 auto 70px auto;
 }
 
 main#dons.container div#choice div#bloc-choice button.btn-donate:hover{
 	cursor: pointer;
 	background: #f8b195;
+	color:#FFF;
 }
 
-main#dons.container div#choice div#bloc-choice button.btn-donate a{
+main#dons.container form {
+
+}
+
+main#dons.container form input{
+	border: none;
+	margin:0 0 70px 0;
+	font-family: 'Avenir';
+	font-size: 18px;
+	font-weight: lighter;
+}
+
+main#dons.container form label{
+	font-family: 'Avenir';
+	font-size: 18px;
+	margin: 0 20px 0 0;
+}
+
+main#dons.container form input[type="text"]:first-child{
+	display: block;
+	width: 280px;
+}
+
+main#dons.container form input[type="text"], main#dons.container form input[type="number"]{
+	border-bottom: 1px solid #f8b195;
+	display: inline-block;
+	height: 35px;
+	line-height:34px;
+	outline: none;
+}
+
+main#dons.container form input[type="radio"]{
+	border-bottom: 1px solid #000;
+	display: inline-block;
+	margin: 0 10px 70px 0;
+	line-height:34px;
+	outline: none;
+}
+
+::-webkit-input-placeholder {
+	font-family: 'Avenir';
+	font-size: 18px;
+	height: 50px;
+	color:#000;
+}
+:-moz-placeholder { /* older Firefox*/
+	font-family: 'Avenir';
+	font-size: 18px;
+	height: 50px;
+	color:#000;
+}
+::-moz-placeholder { /* Firefox 19+ */ 
+	font-family: 'Avenir';
+	font-size: 18px;
+	height: 50px;
+	color:#000;
+} 
+:-ms-input-placeholder { 
+	font-family: 'Avenir';
+	font-size: 18px;
+	height: 50px;
 	color:#000;
 }
 
+main#dons.container form div{
+	display: block;
+	max-width: 940px;
+}
+
+main#dons.container form div input, main#dons.container form div input[type="text"]:first-child{
+	display: inline-block;
+	width: 200px;
+	margin:0 15% 70px 0;
+}
+
+main#dons.container form div input:nth-child(3n){
+	margin-right:0 ;
+}
+
+main#dons.container form p{
+	max-width: 622px;
+	color: #9b9b9b;
+	line-height: 20px;
+	font-family: 'Avenir';
+	font-size: 10px;
+	font-style: italic;
+	font-weight: lighter;
+	margin: 15px 0 60px 0;
+}
+
+main#dons.container form input[type="submit"]{
+	border: 1px solid #f8b195;
+	border-radius: 100px;
+	background: #FFF;
+	width: 130px;
+	height: 40px;
+	line-height:34px;
+	outline: none;
+	display: block;
+	margin: auto;
+}
+
+main#dons.container form input[type="submit"]:hover{
+	background: #f8b195;
+	color:#FFF;
+	cursor: pointer;
+}
 
 
 
@@ -767,7 +891,18 @@ footer div h3 a{
 	color: #000;
 }
 
+@media screen and (min-width:1700px) {
+	main#association.container article{
 
+		margin:50px 0 0 2%;
+	}
+}
+
+@media screen and (max-width:1077px) {
+	main#dons.container form div input:nth-child(3n){
+		margin:0 15% 70px 0;
+	}
+}
 
 @media screen and (max-width: 965px) {
 	header#header-desktop{
