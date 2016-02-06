@@ -276,6 +276,7 @@ main .container #title {
 	line-height:26px;
 	text-align:center;
 	letter-spacing:1.05px;
+	padding: 120px 0 0 0;
 }
 
 main .container #subtitle {
@@ -408,7 +409,7 @@ main#etapes.container article{
 	height: auto;
 	float: left;
 	background: #FFF;
-	margin:30px 0 0 0;
+	margin:100px 0 0 0;
 }
 
 main#etapes.container article div.img-etape{
@@ -554,7 +555,6 @@ main#association.container aside{
 }
 
 main#association.container article{
-	float: left;
 	background: #FFF;
 	width: 42%;
 	margin:50px 0 0 8%;
@@ -582,7 +582,7 @@ main#dons.container{
 	height: auto;
 	margin:0 100px 0 100px;
 	background: #FFF;
-	float: left;
+
 }
 
 main#dons.container #title {
@@ -592,6 +592,7 @@ main#dons.container #title {
 	line-height:26px;
 	text-align:center;
 	letter-spacing:1.05px;
+	padding:120px 0 0 0;
 }
 
 main#dons.container #subtitle {
@@ -757,10 +758,9 @@ main#dons.container form input[type="submit"]:hover{
 main#donateurs.container {
 	clear: both;
 	height: auto;
-	margin:0 100px 0 100px;
+	margin:0 auto 0 auto;
 	background: #FFF;
 	max-width: 1131px;
-	float: left;
 }
 
 main#donateurs.container div.container{
@@ -933,7 +933,7 @@ footer div h3 a{
   	}
 
   	main.container{
-  		padding:40px 0 0 0;
+  		padding:70px 0 0 0;
   	}
 
   	main .container #title {
