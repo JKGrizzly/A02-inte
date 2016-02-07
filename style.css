@@ -412,6 +412,17 @@ main#etapes.container article{
 	margin:100px 0 0 0;
 }
 
+main#etapes.container article h2{
+	font-size: 26px;
+	font-family: 'Avenir';
+	font-weight: bold;
+	text-align: center;
+	margin: 0 0 30px 0;
+	color: #f8b195;
+	display: none;
+
+}
+
 main#etapes.container article div.img-etape{
 	width: 100%;
 	height: 444px;
@@ -830,7 +841,7 @@ main#donateurs.container div#choice-area form div select{
 	margin: 10px 0 0 20px;
 }
 
-main#donateurs.container div#choice-area form input[type="submit"]{
+main#donateurs.container div#choice-area form div#lien-etape{
 	border: 1px solid #FFF;
 	background: #f8b195;
     border-radius: 100px;
@@ -839,13 +850,21 @@ main#donateurs.container div#choice-area form input[type="submit"]{
     color: #FFF;
     font-size: 16px;
     margin: 0 0 0 10px;
+    text-align: center;
 }
 
-main#donateurs.container div#choice-area form input[type="submit"]:hover{
+main#donateurs.container div#choice-area form div#lien-etape:hover{
 	cursor: pointer;
 	border: 1px solid #f8b195;
 	background: #FFF;
 	color:#f8b195;
+}
+
+main#donateurs.container div#choice-area form div#lien-etape a{
+	font-size: 16px;
+	font-family: 'Avenir';
+	color: #000;
+	line-height: 40px;
 }
 
 main#donateurs.container div#choice-area div#progress{
@@ -993,6 +1012,11 @@ footer div h3 a{
 		margin:30px 0;
 	}
 
+	main#etapes.container article h2{
+		display: block;
+
+	}
+
 	main#etapes.container aside{
 		display: none;
 	}
@@ -1037,7 +1061,7 @@ footer div h3 a{
 	main#donateurs.container div#choice-area form div{
 		margin:30px auto 30px auto;
 	}
-	main#donateurs.container div#choice-area form input[type="submit"]{
+	main#donateurs.container div#choice-area form div#lien-etape{
     	margin: 30px 0 0 10px;
 	}
 
@@ -1238,7 +1262,7 @@ footer div h3 a{
     	margin: 30px 0 0 50px;
 	}
 
-	main#donateurs.container div#choice-area form input[type="submit"]{
+	main#donateurs.container div#choice-area form div#lien-etape{
     	margin: 30px 0 0 50px;
 	}
 }
