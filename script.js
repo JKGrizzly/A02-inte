@@ -3,7 +3,7 @@ $(document).ready(function(){
 	//openBurger();
 	closeBurger();
 	scrollEtape();
-
+	
 	if (window.matchMedia("(max-width: 650px)").matches) {
 		openBurger('75%');
 	}

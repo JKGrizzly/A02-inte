@@ -461,18 +461,20 @@ main#etapes.container aside h2{
 }
 
 main#etapes.container aside div{
-	position: absolute;
-	top: 100px;
+	position: relative;
+	top: -70px;
 }
 
 main#etapes.container aside div.trait{
 	right: 14px;
+	float: right;
 
 }
 
-main#etapes.container aside div.cross{
-	top:145px;
-	right: 0;
+main#etapes.container aside div.trait img{
+	position: relative;
+	right: -15px;
+	height: 580px;
 
 }
 
@@ -543,7 +545,6 @@ main#association.container{
 	height: auto;
 	margin:0 100px 0 100px;
 	background: #FFF;
-	float: left;
 }
 
 main#association.container aside{
@@ -558,6 +559,7 @@ main#association.container article{
 	background: #FFF;
 	width: 42%;
 	margin:50px 0 0 8%;
+	float: left;
 }
 
 main#association.container h1, main#association.container h2{
