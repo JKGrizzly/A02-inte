@@ -808,11 +808,16 @@ main#donateurs.container div#choice-area h2{
 	text-align: center;
 }
 
+main#donateurs.container div#choice-area form {
+	margin: 30px 0 0 0;
+}
+
 main#donateurs.container div#choice-area form div{
 	border: 1px solid #f8b195;
 	border-radius: 100px;
 	width: 137px;
 	height: 40px;
+	float: left;
 }
 
 main#donateurs.container div#choice-area form div select{
@@ -823,6 +828,24 @@ main#donateurs.container div#choice-area form div select{
 	outline: none;
 	background: #FFF;
 	margin: 10px 0 0 20px;
+}
+
+main#donateurs.container div#choice-area form input[type="submit"]{
+	border: 1px solid #FFF;
+	background: #f8b195;
+    border-radius: 100px;
+    width: 137px;
+    height: 40px;
+    color: #FFF;
+    font-size: 16px;
+    margin: 0 0 0 10px;
+}
+
+main#donateurs.container div#choice-area form input[type="submit"]:hover{
+	cursor: pointer;
+	border: 1px solid #f8b195;
+	background: #FFF;
+	color:#f8b195;
 }
 
 main#donateurs.container div#choice-area div#progress{
@@ -836,7 +859,7 @@ main#donateurs.container div#choice-area div#bar-total{
 	height: 10px;
 	border: 1px solid #f8b195;
 	border-radius: 100px;
-	margin:0 20px 0 auto;
+	margin:30px 20px 0 auto;
 }
 
 main#donateurs.container div#choice-area div#bar-progress{
@@ -917,6 +940,9 @@ footer div h3 a{
 	main#association.container article{
 
 		margin:50px 0 0 2%;
+	}
+	main#association.container h1{
+		padding: 50px 0 0 0;
 	}
 
 	main#donateurs .container {
@@ -1010,6 +1036,9 @@ footer div h3 a{
 
 	main#donateurs.container div#choice-area form div{
 		margin:30px auto 30px auto;
+	}
+	main#donateurs.container div#choice-area form input[type="submit"]{
+    	margin: 30px 0 0 10px;
 	}
 
 	main#dons.container #title {
@@ -1202,3 +1231,22 @@ footer div h3 a{
 	main#dons.container #title {
 		padding:0;
 }
+
+@media  screen and (max-width: 350px){
+
+	main#donateurs.container div#choice-area form div{
+    	margin: 30px 0 0 50px;
+	}
+
+	main#donateurs.container div#choice-area form input[type="submit"]{
+    	margin: 30px 0 0 50px;
+	}
+}
+
+
+
+
+
+
+
+
