@@ -457,17 +457,18 @@ main#etapes.container aside h2{
 	line-height: 26px;
 	letter-spacing: 2.3px;
 	color: #f8b195;
-	margin: 150px 0 0 15%;
+	margin: 150px 0 0 3%;
+	position: fixed;
 }
 
 main#etapes.container aside div{
 	position: relative;
-	top: -70px;
+	top: 100px;
 }
 
 main#etapes.container aside div.trait{
-	right: 14px;
-	float: right;
+	right: 110px;
+	position: fixed;
 
 }
 
@@ -478,6 +479,12 @@ main#etapes.container aside div.trait img{
 
 }
 
+main#etapes.container aside div.cross{
+	top:120px;
+	position: fixed;
+	right: 95px;
+	float: right;
+}
 
 main#etapes.container div.etape-next{
 	height: 30px;
@@ -523,7 +530,7 @@ main#mentions.container h1, main#mentions.container h2{
 }
 
 main#mentions.container h1{
-	margin: 50px 0 0 0;
+	margin: 100px 0 0 0;
 }
 
 main#mentions.container h2{
@@ -558,7 +565,7 @@ main#association.container aside{
 main#association.container article{
 	background: #FFF;
 	width: 42%;
-	margin:50px 0 0 8%;
+	margin:100px 0 0 8%;
 	float: left;
 }
 
@@ -614,7 +621,7 @@ main#dons.container div#choice{
 
 main#dons.container div#choice div#bloc-choice{
 	margin: auto;
-	width: 50%;
+	width: 85%;
 }
 
 main#dons.container div#choice div#bloc-choice h4{
@@ -1005,6 +1012,14 @@ footer div h3 a{
 		margin:30px auto 30px auto;
 	}
 
+	main#dons.container #title {
+    	padding: 0
+	}
+
+	main#donateurs.container div#title {
+    	padding: 0;
+	}
+
 }
 
 @media screen and (max-width:600px){
@@ -1014,7 +1029,7 @@ footer div h3 a{
 	}
 
 	main#donateurs.container div#choice-area div#bar-total{
-		width: 240px;
+		width: 210px;
 	}
 }
 
@@ -1183,4 +1198,7 @@ footer div h3 a{
 	nav#mobile-main-menu {
 	    width: 75%;
 	}
+
+	main#dons.container #title {
+		padding:0;
 }
